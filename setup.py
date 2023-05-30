@@ -12,7 +12,7 @@ DESCRIPTION = 'Personal tool library'
 
 # Setting up
 setup(
-    name="pipiyi_tools",
+    name="pipiyiTools",
     version=VERSION,
     author="pipiyi",
     author_email="smallpoliao@gmail.com",
