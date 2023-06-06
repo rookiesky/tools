@@ -4,7 +4,7 @@
 @Project ：内容队列
 @File    ：ListQueue.py
 @Author  ：Pipiyi
-@Date    ：24/5/23 21:35 
+@Date    ：24 /5/23 21:35 
 """
 
 
@@ -14,6 +14,15 @@ class ListQueue:
 
     def get_all(self, key):
         return self.data.get(key, [])
+
+    def set_items(self, key, value):
+        """写入内容,如果有指定key则覆盖，没有则写入
+
+        Args:
+            key (_type_): _description_
+            value (_type_): _description_
+        """
+        self.data["key"] = value
 
     def put(self, key, item):
         """

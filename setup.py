@@ -7,8 +7,8 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.1'
-DESCRIPTION = 'Personal tool library'
+VERSION = "0.0.3"
+DESCRIPTION = "Personal tool library"
 
 # Setting up
 setup(
@@ -20,9 +20,9 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
-    install_requires=['requests', 'ebooklib', 'colorlog','dbutils','pymysql'],
-    keywords=['python'],
-    setup_requires=['wheel'],
+    install_requires=["requests", "ebooklib", "colorlog", "dbutils", "pymysql"],
+    keywords=["python"],
+    setup_requires=["wheel"],
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",
@@ -30,5 +30,5 @@ setup(
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
-    ]
+    ],
 )
